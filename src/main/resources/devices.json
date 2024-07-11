@@ -1,0 +1,46 @@
+[
+  {
+    "topic": "open_space_1_light_switch",
+    "type": "light"
+  },
+  {
+    "topic": "open_space_2_light_switch",
+    "type": "light"
+  },
+  {
+    "topic": "open_space_1_curtains_switch",
+    "type": "curtains"
+  },
+  {
+    "topic": "open_space_2_curtains_switch",
+    "type": "curtains"
+  },
+  {
+    "topic": "meeting_room_1_light_switch",
+    "type": "light"
+  },
+  {
+    "topic": "meeting_room_2_light_switch",
+    "type": "light"
+  },
+  {
+    "topic": "meeting_room_1_climate",
+    "type": "climate"
+  },
+  {
+    "topic": "meeting_room_2_climate",
+    "type": "climate"
+  },
+  {
+    "topic": "meeting_room_1_fancoil",
+    "type": "fancoil"
+  },
+  {
+    "topic": "meeting_room_2_fancoil",
+    "type": "fancoil"
+  },
+  {
+    "topic": "power_counter_1",
+    "type": "power"
+  }
+]
