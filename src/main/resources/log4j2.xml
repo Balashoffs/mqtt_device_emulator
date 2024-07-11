@@ -29,7 +29,7 @@
         </Console>
     </Appenders>
     <Loggers>
-        <Logger name="com.balashoff.bimstand" level="debug" additivity="true">
+        <Logger name="com.balashoff" level="debug" additivity="true">
             <appender-ref ref="Async-bimstand-log" level="debug" />
         </Logger>
         <Root level="debug" additivity="false">
