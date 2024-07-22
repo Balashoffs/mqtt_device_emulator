@@ -18,7 +18,7 @@ public class LightService extends BaseService {
         customClient.subscribeTopic(topic, s -> {
             log.info("Входящее сообщение: {}", s);
             LightSensor lightSensor = jsonAnalyzer.fromJsonC(s, LightSensor.class);
-            log.info("{}: Свет {}", lightSensor.getName(), lightSensor.isOn() ? "включен" : "выключен");
+            log.info("{}: Свет {}", topic,  lightSensor.isIsOn() ? "включен" : "выключен");
         });
     }
 }
