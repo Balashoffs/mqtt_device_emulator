@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83b0acf2-b583-4f7d-9f38-4d0b70128453" name="Changes" comment="edit gitignore">
+    <list default="true" id="83b0acf2-b583-4f7d-9f38-4d0b70128453" name="Changes" comment="edit log4j2.xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/balashoff/dto/FancoilSensor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/balashoff/dto/StandDevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/balashoff/dto/StandDevice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/devices.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +62,13 @@
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -164,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720707517171</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="edit log4j2.xml">
+      <option name="closed" value="true" />
+      <created>1720707601219</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1720707601219</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -181,6 +198,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add flat jsr plugin" />
     <MESSAGE value="edit gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit gitignore" />
+    <MESSAGE value="edit log4j2.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit log4j2.xml" />
   </component>
 </project>

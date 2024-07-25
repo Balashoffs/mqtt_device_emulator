@@ -1,46 +1,267 @@
 [
   {
-    "topic": "open_space_1_light_switch",
-    "type": "light"
-  },
-  {
-    "topic": "open_space_2_light_switch",
-    "type": "light"
-  },
-  {
-    "topic": "open_space_1_curtains_switch",
-    "type": "curtains"
-  },
-  {
-    "topic": "open_space_2_curtains_switch",
-    "type": "curtains"
-  },
-  {
-    "topic": "meeting_room_1_light_switch",
-    "type": "light"
-  },
-  {
-    "topic": "meeting_room_2_light_switch",
-    "type": "light"
-  },
-  {
-    "topic": "meeting_room_1_climate",
-    "type": "climate"
-  },
-  {
-    "topic": "meeting_room_2_climate",
-    "type": "climate"
-  },
-  {
-    "topic": "meeting_room_1_fancoil",
-    "type": "fancoil"
-  },
-  {
-    "topic": "meeting_room_2_fancoil",
-    "type": "fancoil"
-  },
-  {
-    "topic": "power_counter_1",
+    "uuid": "fea9362a-25ab-4c9f-8fbb-67fb07bf6fd3",
+    "topic": "electrical shield_3_1/data",
     "type": "power"
+  },
+  {
+    "uuid": "bb9a562e-47d9-4635-935d-0e26610ceb7e",
+    "topic": "kitchen_3_23/light_switch",
+    "type": "light"
+  },
+  {
+    "uuid": "fca24759-3653-4eb0-9319-2b5dab7f7098",
+    "topic": "kitchen_3_23/climate",
+    "type": "climate"
+  },
+  {
+    "uuid": "6d09d86c-91cd-45c4-9f57-67eba0b115a0",
+    "topic": "gym_3_16/light_switch",
+    "type": "light"
+  },
+  {
+    "uuid": "67c2415b-21f9-4471-bf34-49bd9ff2164c",
+    "topic": "gym_3_16/climate",
+    "type": "climate"
+  },
+  {
+    "uuid": "ed6cf729-3eff-4b78-80e9-3f5bc2ce438f",
+    "topic": "lectory_3_3/light_switch",
+    "type": "light"
+  },
+  {
+    "uuid": "59674093-6dac-43cb-8279-5c324e1c6726",
+    "topic": "lectory_3_3/climate",
+    "type": "climate"
+  },
+  {
+    "uuid": "2a973a71-9321-4a5b-b96d-35bbc600325c",
+    "topic": "lectory_3_4/curtains_switch",
+    "type": "curtains"
+  },
+  {
+    "uuid": "bc380a3e-768a-4559-9422-36a31d071028",
+    "topic": "lectory_3_4/light_switch",
+    "type": "light"
+  },
+  {
+    "uuid": "556e3a70-6f31-4301-a69e-e9c75042c213",
+    "topic": "lectory_3_4/climate",
+    "type": "climate"
+  },
+  {
+    "uuid": "d5c1ac6e-1e13-425e-af7b-0f49cc80eac0",
+    "topic": "lectory_3_4/curtains_switch",
+    "type": "curtains"
+  },
+  {
+    "uuid": "7ef6cb92-3016-4c19-9c29-a51b097e160f",
+    "topic": "office_room_3_5/curtains_switch",
+    "type": "curtains"
+  },
+  {
+    "uuid": "7590757c-26da-40c4-9082-9692e1d5d6f7",
+    "topic": "office_room_3_5/climate",
+    "type": "climate"
+  },
+  {
+    "uuid": "46113e97-fbd8-4a0f-a8f0-e476d1e5e320",
+    "topic": "office_room_3_5/light_switch",
+    "type": "light"
+  },
+  {
+    "uuid": "e0ec2119-dc61-459d-8a55-35a2fd371829",
+    "topic": "meeting_room_3_7/light_switch",
+    "type": "light"
+  },
+  {
+    "uuid": "91e6129c-e408-487e-8556-cc2b44d0afc1",
+    "topic": "meeting_room_3_7/climate",
+    "type": "climate"
+  },
+  {
+    "uuid": "59218076-8620-49a3-b57e-617a1c2d6b89",
+    "topic": "office_room_3_6/curtains_switch",
+    "type": "curtains"
+  },
+  {
+    "uuid": "555c4ba3-1f77-4439-95cd-8d2caa058e0e",
+    "topic": "office_room_3_6/climate",
+    "type": "climate"
+  },
+  {
+    "uuid": "f3af869b-999c-48fe-9039-fb1f44b630d2",
+    "topic": "office_room_3_6/light_switch",
+    "type": "light"
+  },
+  {
+    "uuid": "212c6289-e169-464d-b2d0-e83363d5256a",
+    "topic": "office_room_3_2_1/curtains_switch",
+    "type": "curtains"
+  },
+  {
+    "uuid": "14f191ce-5d26-4905-b68d-f7d7be6b631b",
+    "topic": "office_room_3_2_1/climate",
+    "type": "climate"
+  },
+  {
+    "uuid": "370da576-8f3f-478f-b6d6-e44f9d19c4dd",
+    "topic": "office_room_3_2_1/light_switch",
+    "type": "light"
+  },
+  {
+    "uuid": "b531653b-9bf0-4a59-b651-837b61d55ba8",
+    "topic": "office_room_3_2_2/curtains_switch",
+    "type": "curtains"
+  },
+  {
+    "uuid": "50b3a2a4-f3cd-43e3-b192-e1fc19cb2839",
+    "topic": "office_room_3_2_2/climate",
+    "type": "climate"
+  },
+  {
+    "uuid": "81ab3097-9498-4449-9d6d-68df11307a6f",
+    "topic": "office_room_3_2_2/light_switch",
+    "type": "light"
+  },
+  {
+    "uuid": "f9fc91f9-0804-4e54-942f-78b07b6ec15a",
+    "topic": "meeting_room_3_8/light_switch",
+    "type": "light"
+  },
+  {
+    "uuid": "00b05c5d-2511-40f8-8ca3-971b6384f7ea",
+    "topic": "meeting_room_3_8/climate",
+    "type": "climate"
+  },
+  {
+    "uuid": "c116ba65-fc5a-49d7-8a19-d4226ad4b58d",
+    "topic": "meeting_room_3_9/light_switch",
+    "type": "light"
+  },
+  {
+    "uuid": "56d431d7-2c70-42b2-a2ad-8793237cbe74",
+    "topic": "meeting_room_3_9/climate",
+    "type": "climate"
+  },
+  {
+    "uuid": "f76e4789-92cc-46de-9c32-cde58180a67b",
+    "topic": "meeting_room_3_10/light_switch",
+    "type": "light"
+  },
+  {
+    "uuid": "389bd008-8eee-46db-bae9-a77bc0c194c9",
+    "topic": "meeting_room_3_10/climate",
+    "type": "climate"
+  },
+  {
+    "uuid": "4ec142c8-ae4e-4ec2-8e9f-207c332bd2f2",
+    "topic": "office_room_3_11/curtains_switch",
+    "type": "curtains"
+  },
+  {
+    "uuid": "e359594b-8764-453c-b85b-c87aa1649904",
+    "topic": "office_room_3_11/climate",
+    "type": "climate"
+  },
+  {
+    "uuid": "ee84f773-226e-4737-8522-0fb099543aae",
+    "topic": "office_room_3_11/light_switch",
+    "type": "light"
+  },
+  {
+    "uuid": "de609a0b-1dfb-4729-a737-aaa6d010a70b",
+    "topic": "office_room_3_14/curtains_switch",
+    "type": "curtains"
+  },
+  {
+    "uuid": "799d7844-f3c3-4a15-bcc0-665fb44757fb",
+    "topic": "office_room_3_14/climate",
+    "type": "climate"
+  },
+  {
+    "uuid": "aa25d4a6-2e2c-42b4-94f6-37d5c987bc2f",
+    "topic": "office_room_3_14/light_switch",
+    "type": "light"
+  },
+  {
+    "uuid": "68747fef-2d2c-4003-8360-c1d403b3bbec",
+    "topic": "office_room_3_12/curtains_switch",
+    "type": "curtains"
+  },
+  {
+    "uuid": "21a34dab-ba79-4f4e-af0d-f907300b4f5c",
+    "topic": "office_room_3_12/climate",
+    "type": "climate"
+  },
+  {
+    "uuid": "73294346-32a0-4a03-9266-12b07ca06cff",
+    "topic": "office_room_3_12/light_switch",
+    "type": "light"
+  },
+  {
+    "uuid": "4293dffa-a9dd-abc0-af0d-478c97fbed91",
+    "topic": "coffee_ppoint_3_13/light_switch",
+    "type": "light"
+  },
+  {
+    "uuid": "2e0f419e-4315-7c7f-4f8f-0e4856b03dc7",
+    "topic": "coffee_ppoint_3_13/climate",
+    "type": "climate"
+  },
+  {
+    "uuid": "2db36858-00b1-4ff4-afb7-8408e1fb977b",
+    "topic": "meeting_room_3_25/light_switch",
+    "type": "light"
+  },
+  {
+    "uuid": "30c0b74d-e79b-40a7-8b7d-7ea0adda04b1",
+    "topic": "meeting_room_3_25/climate",
+    "type": "climate"
+  },
+  {
+    "uuid": "4293dffa-abc0-4f8f-af0d-0e4856b03dc7",
+    "topic": "meeting_room_3_27/light_switch",
+    "type": "light"
+  },
+  {
+    "uuid": "2e0f419e-7c7f-4315-a9dd-478c97fbed91",
+    "topic": "meeting_room_3_27/climate",
+    "type": "climate"
+  },
+  {
+    "uuid": "2e0f419e-4f8f-abc0-af0d-478c97fbed91",
+    "topic": "shower_room_3_19/light_switch",
+    "type": "light"
+  },
+  {
+    "uuid": "4293dffa-4315-7c7f-a9dd-0e4856b03dc7",
+    "topic": "shower_room_3_19/climate",
+    "type": "climate"
+  },
+  {
+    "uuid": "4293dffa-4f8f-abc0-af0d-478c97fbed91",
+    "topic": "shower_room_3_19/light_switch",
+    "type": "light"
+  },
+  {
+    "uuid": "2e0f419e-4315-7c7f-a9dd-0e4856b03dc7",
+    "topic": "shower_room_3_19/climate",
+    "type": "climate"
+  },
+  {
+    "uuid": "4293dffa-4f8f-abc0-af0d-0e4856b03dc7",
+    "topic": "suit_room_3_1/light_switch",
+    "type": "light"
+  },
+  {
+    "uuid": "2e0f419e-4315-7c7f-a9dd-478c97fbed91",
+    "topic": "suit_room_3_1/climate",
+    "type": "climate"
+  },
+  {
+    "uuid": "4293dffa-abc0-af0d-4f8f0e4856b03dc7",
+    "topic": "income_room_3_15/camera",
+    "type": "camera"
   }
 ]
