@@ -73,7 +73,7 @@ public class CurtainsService extends BaseService {
 
     @Override
     public void run() {
-        customClient.subscribeTopic(String.format("bimstand/%s", topic), s -> {
+        customClient.subscribeTopic(topic, s -> {
             log.info("Входящее сообщение: {}", s);
             CurtainsSensor incoming = jsonAnalyzer.fromJsonC(s, CurtainsSensor.class);
             int nextDirection = incoming.getDirection();

@@ -15,10 +15,10 @@ public class LightService extends BaseService {
 
     @Override
     public void run() {
-        customClient.subscribeTopic(String.format("bimstand/%s", topic), s -> {
+        customClient.subscribeTopic(topic, s -> {
             log.info("Входящее сообщение: {}", s);
             LightSensor lightSensor = jsonAnalyzer.fromJsonC(s, LightSensor.class);
-            log.info("{}: Свет {}", lightSensor.getName(), lightSensor.isOn() ? "включен" : "выключен");
+            log.info("{}: Свет {}", topic,  lightSensor.isIsOn() ? "включен" : "выключен");
         });
     }
 }
