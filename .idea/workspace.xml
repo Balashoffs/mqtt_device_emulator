@@ -4,11 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83b0acf2-b583-4f7d-9f38-4d0b70128453" name="Changes" comment="edit log4j2.xml">
+    <list default="true" id="83b0acf2-b583-4f7d-9f38-4d0b70128453" name="Changes" comment="release 1.0.1">
+      <change afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/balashoff/dto/FancoilSensor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/balashoff/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/balashoff/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/balashoff/dto/ClimateSensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/balashoff/dto/ClimateSensor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/balashoff/dto/CurtainsSensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/balashoff/dto/CurtainsSensor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/balashoff/dto/LightSensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/balashoff/dto/LightSensor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/balashoff/dto/PowerSensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/balashoff/dto/PowerSensor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/balashoff/dto/StandDevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/balashoff/dto/StandDevice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/devices.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/balashoff/services/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/balashoff/services/BaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/balashoff/services/ClimateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/balashoff/services/ClimateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/balashoff/services/CurtainsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/balashoff/services/CurtainsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/balashoff/services/LightService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/balashoff/services/LightService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/balashoff/services/PowerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/balashoff/services/PowerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/balashoff/services/ServiceFabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/balashoff/services/ServiceFabric.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/balashoff/util/generator/ClimateGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/balashoff/util/generator/ClimateGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/balashoff/util/generator/PowerGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/balashoff/util/generator/PowerGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/devices.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/devices.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +51,12 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="mqtt_emulator" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="mqtt_emulator" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -73,6 +93,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -82,25 +105,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.mqtt_emulator [:Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.mqtt_emulator [shadowJar].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/bau/Documents/develop/company/liis/mqtt_emulator&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.mqtt_emulator [:Main.main()].executor": "Run",
+    "Gradle.mqtt_emulator [buildFatJar].executor": "Run",
+    "Gradle.mqtt_emulator [clean].executor": "Run",
+    "Gradle.mqtt_emulator [shadowJar].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/bau/Documents/develop/company/liis/mqtt_emulator",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "show.migrate.to.gradle.popup": "false"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.mqtt_emulator [shadowJar]">
+  <component name="RunManager" selected="Gradle.mqtt_emulator [buildFatJar]">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.balashoff.Main" />
       <module name="mqtt_emulator.main" />
@@ -114,6 +143,50 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="mqtt_emulator [buildFatJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildFatJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="mqtt_emulator [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
     </configuration>
     <configuration name="mqtt_emulator [shadowJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -139,10 +212,14 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
+      <item itemvalue="Gradle.mqtt_emulator [buildFatJar]" />
+      <item itemvalue="Gradle.mqtt_emulator [clean]" />
       <item itemvalue="Gradle.mqtt_emulator [shadowJar]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.mqtt_emulator [buildFatJar]" />
+        <item itemvalue="Gradle.mqtt_emulator [clean]" />
         <item itemvalue="Gradle.mqtt_emulator [shadowJar]" />
         <item itemvalue="Application.Main" />
       </list>
@@ -199,6 +276,7 @@
     <MESSAGE value="add flat jsr plugin" />
     <MESSAGE value="edit gitignore" />
     <MESSAGE value="edit log4j2.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit log4j2.xml" />
+    <MESSAGE value="release 1.0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="release 1.0.1" />
   </component>
 </project>

@@ -11,4 +11,7 @@ public class PowerSensor {
     private String name;
     private double power;
     private double voltage;
+    private double current;
+    private double powerFactor;
+    private double voltageFrequency;
 }

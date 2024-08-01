@@ -7,5 +7,5 @@ import lombok.Getter;
 @Getter
 @AllArgsConstructor
 public class LightSensor {
-    private  boolean IsOn;
+    private  boolean isOn;
 }

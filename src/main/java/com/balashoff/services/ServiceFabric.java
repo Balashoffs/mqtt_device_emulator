@@ -6,7 +6,9 @@ import com.balashoff.mqtt.MqttCustomClient;
 import com.balashoff.util.ResourceReader;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class ServiceFabric {
     List<StandDevice> devices = new ArrayList<>();
@@ -20,29 +22,31 @@ public class ServiceFabric {
     }
 
     public List<BaseService> create(MqttCustomClient customClient, String mqttPath) {
-        final List<BaseService> createdServices = new ArrayList<>();
+        final Map<String, BaseService> createdServices = new HashMap<>();
         devices.forEach(standDevice -> {
             String topic = String.format("%s/%s", mqttPath, standDevice.getTopic());
-            switch (standDevice.getType()) {
+            String type = standDevice.getType();
+
+            switch (type) {
                 case "light":
-                    BaseService ls = new LightService( topic, customClient);
-                    createdServices.add(ls);
+                    createdServices.putIfAbsent(type, new LightService(customClient));
                     break;
                 case "curtains":
-                    BaseService crs = new CurtainsService( topic, customClient);
-                    createdServices.add(crs);
+                    createdServices.putIfAbsent(type, new CurtainsService(customClient));
                     break;
                 case "climate":
-                    BaseService cs = new ClimateService(topic, customClient);
-                    createdServices.add(cs);
+                    createdServices.putIfAbsent(type, new ClimateService(customClient));
                     break;
                 case "power":
-                    BaseService ps = new PowerService(topic, customClient);
-                    createdServices.add(ps);
+                    createdServices.putIfAbsent(type, new PowerService(customClient));
                     break;
             }
+            if (createdServices.containsKey(type)) {
+                createdServices.get(type).addTopic(topic);
+            }
+
         });
 
-        return createdServices;
+        return createdServices.values().stream().toList();
     }
 }

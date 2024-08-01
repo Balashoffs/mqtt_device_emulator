@@ -11,5 +11,5 @@ public class CurtainsSensor {
     0 - stop
     1 - forward
      */
-    private  int Direction;
+    private  int direction;
 }
