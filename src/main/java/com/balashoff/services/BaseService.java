@@ -1,26 +1,36 @@
 package com.balashoff.services;
 
-import com.balashoff.json.JsonAnalyzer;
 import com.balashoff.mqtt.MqttCustomClient;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.Executor;
-import java.util.concurrent.Executors;
+import java.util.concurrent.atomic.AtomicBoolean;
 
-@AllArgsConstructor
 abstract public class BaseService implements Runnable {
 
-    protected MqttCustomClient customClient;
     protected final List<String> topics = new ArrayList<>();
 
-    public  void addTopic(String topic){
+    protected MqttCustomClient customClient;
+
+    public void set(MqttCustomClient customClient) {
+        this.customClient = customClient;
+    }
+
+    public void addTopic(String topic) {
         topics.add(topic);
     }
 
-    public void push(){}
-    public void poll(){}
+
+    public void push() {
+    }
+
+    public void poll() {
+    }
+
+    public void stop() {
+    }
 
     @Override
     public void run() {

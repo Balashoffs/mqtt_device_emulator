@@ -19,7 +19,7 @@ public class JsonAnalyzer<T> {
         return gson.toJson(object, type);
     }
 
-    public <T> T fromJsonT(String json, Type type ) {
+    public <T> T fromJsonT(String json, Type type) {
         return gson.fromJson(json, type);
     }
 

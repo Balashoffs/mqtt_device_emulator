@@ -4,22 +4,25 @@ import com.balashoff.dto.PowerSensor;
 import com.balashoff.json.JsonAnalyzer;
 import com.balashoff.mqtt.MqttCustomClient;
 import com.balashoff.util.generator.PowerGenerator;
+import lombok.extern.log4j.Log4j2;
+import org.eclipse.paho.client.mqttv3.MqttException;
 
+@Log4j2
 public class PowerService extends BaseService {
     protected final JsonAnalyzer<PowerSensor> jsonAnalyzer = new JsonAnalyzer<>();
     private final PowerGenerator pg = new PowerGenerator();
 
-    public PowerService(MqttCustomClient customClient) {
-        super(customClient);
+    public PowerService() {
+        super();
     }
 
     public void push() {
-        new Thread(()->{
-            while (true){
-                topics.forEach(topic ->{
+        new Thread(() -> {
+            while (customClient.isRunning.get()) {
+                for (String topic : topics) {
                     double voltage = pg.generateVoltage();
                     double current = pg.generateCurrent();
-                    double pw = voltage * current /1000;
+                    double pw = voltage * current / 1000;
                     pw = pw * 100;
                     pw = Math.round(pw);
                     pw = pw / 100;
@@ -37,16 +40,22 @@ public class PowerService extends BaseService {
                             .voltageFrequency(voltageFrequency)
                             .build();
                     String json = jsonAnalyzer.toJsonC(ps, PowerSensor.class);
-
-                    customClient.pushMessage(topic, json);
-
+                    boolean isPushed = customClient.pushMessage(topic, json);
+                    if(!isPushed) break;
                     try {
-                        Thread.sleep(5000);
+                        Thread.sleep(100);
                     } catch (InterruptedException e) {
-                        throw new RuntimeException(e);
+                        log.warn(e.getMessage());
                     }
-                } );
+                }
+
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    log.warn(e.getMessage());
+                }
             }
         }).start();
     }
+
 }
