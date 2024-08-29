@@ -29,7 +29,6 @@ public class PowerService extends BaseService {
 
                     PowerSensor ps = PowerSensor
                             .builder()
-                            .name(topic)
                             .power(power)
                             .voltage(voltage)
                             .current(current)
@@ -41,7 +40,7 @@ public class PowerService extends BaseService {
                     customClient.pushMessage(topic, json);
 
                     try {
-                        Thread.sleep(5000);
+                        Thread.sleep(10000);
                     } catch (InterruptedException e) {
                         throw new RuntimeException(e);
                     }

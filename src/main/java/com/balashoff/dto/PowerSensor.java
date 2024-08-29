@@ -8,7 +8,6 @@ import lombok.Getter;
 @Builder
 @AllArgsConstructor
 public class PowerSensor {
-    private String name;
     private double power;
     private double voltage;
     private double current;

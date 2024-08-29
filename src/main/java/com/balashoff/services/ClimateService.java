@@ -21,12 +21,12 @@ public class ClimateService extends BaseService
         new Thread(()->{
             while (true){
                 topics.forEach(topic -> {
-                    double t = climateGenerator.generateTemperature();
-                    double p = climateGenerator.generatePressure();
-                    double h = climateGenerator.generateHumidity();
-                    double c = climateGenerator.generateCo2();
-                    double tv = climateGenerator.generateTVOC();
-                    ClimateSensor cl = new ClimateSensor(topic, t, h, p, c, tv);
+                    String t = climateGenerator.generateTemperature();
+                    String p = climateGenerator.generatePressure();
+                    String h = climateGenerator.generateHumidity();
+                    String c = climateGenerator.generateCo2();
+                    String tv = climateGenerator.generateTVOC();
+                    ClimateSensor cl = new ClimateSensor( t, h, p, c, tv);
                     String json = jsonAnalyzer.toJsonC(cl, ClimateSensor.class);
                     customClient.pushMessage(topic, json);
                     try {
@@ -36,7 +36,7 @@ public class ClimateService extends BaseService
                     }
                 });
                 try {
-                    Thread.sleep(1000);
+                    Thread.sleep(10000);
                 } catch (InterruptedException e) {
                     log.warn(e.getMessage());
                 }

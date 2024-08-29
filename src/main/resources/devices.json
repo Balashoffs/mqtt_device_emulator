@@ -1,9 +1,5 @@
 [
   {
-    "topic": "electrical_shield_3_1/power_data",
-    "type": "power"
-  },
-  {
     "topic": "kitchen_3_23/light_switch",
     "type": "light"
   },
@@ -76,51 +72,11 @@
     "type": "light"
   },
   {
-    "topic": "office_room_3_2_1/curtains_switch",
-    "type": "curtains"
-  },
-  {
-    "topic": "office_room_3_2_1/climate_data",
-    "type": "climate"
-  },
-  {
-    "topic": "office_room_3_2_1/light_switch",
-    "type": "light"
-  },
-  {
-    "topic": "office_room_3_2_2/curtains_switch",
-    "type": "curtains"
-  },
-  {
-    "topic": "office_room_3_2_2/climate_data",
-    "type": "climate"
-  },
-  {
-    "topic": "office_room_3_2_2/light_switch",
-    "type": "light"
-  },
-  {
     "topic": "meeting_room_3_8/light_switch",
     "type": "light"
   },
   {
     "topic": "meeting_room_3_8/climate_data",
-    "type": "climate"
-  },
-  {
-    "topic": "meeting_room_3_9/light_switch",
-    "type": "light"
-  },
-  {
-    "topic": "meeting_room_3_9/climate_data",
-    "type": "climate"
-  },
-  {
-    "topic": "meeting_room_3_10/light_switch",
-    "type": "light"
-  },
-  {
-    "topic": "meeting_room_3_10/climate_data",
     "type": "climate"
   },
   {
@@ -208,7 +164,7 @@
     "type": "climate"
   },
   {
-    "topic": "income_room_3_15/camera",
-    "type": "camera"
+    "topic": "electrical_shield_3_2/power_data",
+    "type": "power"
   }
 ]

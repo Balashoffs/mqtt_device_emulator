@@ -4,24 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83b0acf2-b583-4f7d-9f38-4d0b70128453" name="Changes" comment="release 1.0.1">
-      <change afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
+    <list default="true" id="83b0acf2-b583-4f7d-9f38-4d0b70128453" name="Changes" comment="add readme.md">
+      <change afterPath="$PROJECT_DIR$/run.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mqtt_devices.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/zigbee.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/balashoff/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/balashoff/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/balashoff/dto/ClimateSensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/balashoff/dto/ClimateSensor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/balashoff/dto/CurtainsSensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/balashoff/dto/CurtainsSensor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/balashoff/dto/LightSensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/balashoff/dto/LightSensor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/balashoff/dto/PowerSensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/balashoff/dto/PowerSensor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/balashoff/dto/StandDevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/balashoff/dto/StandDevice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/balashoff/services/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/balashoff/services/BaseService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/balashoff/services/ClimateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/balashoff/services/ClimateService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/balashoff/services/CurtainsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/balashoff/services/CurtainsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/balashoff/services/LightService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/balashoff/services/LightService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/balashoff/services/PowerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/balashoff/services/PowerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/balashoff/services/ServiceFabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/balashoff/services/ServiceFabric.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/balashoff/util/generator/ClimateGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/balashoff/util/generator/ClimateGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/balashoff/util/generator/PowerGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/balashoff/util/generator/PowerGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/devices.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/devices.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,41 +36,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="mqtt_emulator" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="mqtt_emulator" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="mqtt_emulator" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="mqtt_emulator" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="other" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="mqtt_emulator" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="shadow" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="mqtt_emulator" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="verification" type="c8890929:TasksNode$1" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -113,27 +73,35 @@
     "Gradle.mqtt_emulator [shadowJar].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/bau/Documents/develop/company/liis/mqtt_emulator",
+    "last_opened_file_path": "F:/job/liis/bimstand_v2/mqtt_device_emulator",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
-    "show.migrate.to.gradle.popup": "false"
+    "show.migrate.to.gradle.popup": "false",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\job\liis\bimstand_v2\mqtt_device_emulator" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.mqtt_emulator [buildFatJar]">
+  <component name="RunManager" selected="Gradle.mqtt_device_emulator [build]">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.balashoff.Main" />
       <module name="mqtt_emulator.main" />
-      <option name="PROGRAM_PARAMETERS" value="192.168.89.98 1883" />
+      <option name="PROGRAM_PARAMETERS" value="-ip 192.168.1.102" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.balashoff.*" />
@@ -143,6 +111,28 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="mqtt_device_emulator [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
     </configuration>
     <configuration name="mqtt_emulator [buildFatJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -212,12 +202,14 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
+      <item itemvalue="Gradle.mqtt_device_emulator [build]" />
       <item itemvalue="Gradle.mqtt_emulator [buildFatJar]" />
       <item itemvalue="Gradle.mqtt_emulator [clean]" />
       <item itemvalue="Gradle.mqtt_emulator [shadowJar]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.mqtt_device_emulator [build]" />
         <item itemvalue="Gradle.mqtt_emulator [buildFatJar]" />
         <item itemvalue="Gradle.mqtt_emulator [clean]" />
         <item itemvalue="Gradle.mqtt_emulator [shadowJar]" />
@@ -233,6 +225,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1720688887323</updated>
+      <workItem from="1723397697643" duration="16000" />
+      <workItem from="1723450716573" duration="6551000" />
+      <workItem from="1723800065437" duration="620000" />
+      <workItem from="1723881168758" duration="1621000" />
+      <workItem from="1723886122402" duration="3396000" />
+      <workItem from="1724916136650" duration="3593000" />
     </task>
     <task id="LOCAL-00001" summary="add flat jsr plugin">
       <option name="closed" value="true" />
@@ -260,6 +258,9 @@
     </task>
     <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

@@ -11,29 +11,29 @@ public class ClimateGenerator extends BaseGenerator {
     private double minCo2 = 500, maxCo2 = 1000;
     private double minTVOC = 500, maxTVOC = 1000;
 
-    public double generateTemperature(){
+    public String generateTemperature(){
         double value = generate(minTemp, maxTemp);
-        return round(value);
+        return String.valueOf(round(value));
     }
 
-    public double generateHumidity(){
+    public String generateHumidity(){
         double value = generate(minHumidity, maxHumidity);
-        return round(value);
+        return String.valueOf(round(value));
     }
 
-    public double generatePressure(){
+    public String generatePressure(){
         double value =  generate(minPressure, maxPressure);
-        return round(value);
+        return String.valueOf(round(value));
     }
 
-    public double generateCo2(){
+    public String generateCo2(){
         double value = generate(minCo2, maxCo2);
-        return round(value);
+        return String.valueOf(round(value));
     }
 
-    public double generateTVOC(){
+    public String generateTVOC(){
         double value =  generate(minTVOC, maxTVOC);
-        return round(value);
+        return String.valueOf(round(value));
     }
 
 }

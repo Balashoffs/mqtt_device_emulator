@@ -13,7 +13,7 @@ buildscript {
 }
 
 group = 'com.balashoff'
-version = '1.0.1'
+version = '1.0.5'
 description = 'mqtt-emulator'
 
 
