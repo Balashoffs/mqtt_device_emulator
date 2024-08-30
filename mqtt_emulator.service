@@ -1,0 +1,11 @@
+#/etc/systemd/system/mqtt_emulator.service
+[Unit]
+Description=Example on starting a JAR with systemd
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/fuha/fuha/jbrsdk-17.0.11-linux-aarch64-b1207.30/bin/java -jar /home/fuha/fuha/mqtt_emulator/app.jar
+
+[Install]
+WantedBy=multi-user.target
