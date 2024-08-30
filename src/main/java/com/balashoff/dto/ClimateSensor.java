@@ -1,6 +1,5 @@
 package com.balashoff.dto;
 
-import com.google.gson.annotations.JsonAdapter;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 

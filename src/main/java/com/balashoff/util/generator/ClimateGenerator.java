@@ -1,9 +1,5 @@
 package com.balashoff.util.generator;
 
-import com.balashoff.services.BaseService;
-
-import java.util.Random;
-
 public class ClimateGenerator extends BaseGenerator {
     private double minTemp = 18.0, maxTemp = 25.0;
     private double minHumidity = 45, maxHumidity = 85;

@@ -12,36 +12,30 @@ public class ClimateService extends BaseService
     private final ClimateGenerator climateGenerator = new ClimateGenerator();
     protected final JsonAnalyzer<ClimateSensor> jsonAnalyzer = new JsonAnalyzer<>();
 
-    public ClimateService( MqttCustomClient customClient) {
-        super(customClient);
-    }
-
 
     public void push() {
-        new Thread(()->{
-            while (true){
-                topics.forEach(topic -> {
-                    String t = climateGenerator.generateTemperature();
-                    String p = climateGenerator.generatePressure();
-                    String h = climateGenerator.generateHumidity();
-                    String c = climateGenerator.generateCo2();
-                    String tv = climateGenerator.generateTVOC();
-                    ClimateSensor cl = new ClimateSensor( t, h, p, c, tv);
-                    String json = jsonAnalyzer.toJsonC(cl, ClimateSensor.class);
-                    customClient.pushMessage(topic, json);
-                    try {
-                        Thread.sleep(100);
-                    } catch (InterruptedException e) {
-                        log.warn(e.getMessage());
-                    }
-                });
+        while (true){
+            topics.forEach(topic -> {
+                String t = climateGenerator.generateTemperature();
+                String p = climateGenerator.generatePressure();
+                String h = climateGenerator.generateHumidity();
+                String c = climateGenerator.generateCo2();
+                String tv = climateGenerator.generateTVOC();
+                ClimateSensor cl = new ClimateSensor( t, h, p, c, tv);
+                String json = jsonAnalyzer.toJsonC(cl, ClimateSensor.class);
+                customClient.pushMessage(topic, json);
                 try {
-                    Thread.sleep(10000);
+                    Thread.sleep(100);
                 } catch (InterruptedException e) {
                     log.warn(e.getMessage());
                 }
+            });
+            try {
+                Thread.sleep(10000);
+            } catch (InterruptedException e) {
+                log.warn(e.getMessage());
             }
-        }).start();
+        }
     }
 
 

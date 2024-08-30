@@ -6,11 +6,8 @@ import com.balashoff.services.ServiceFabric;
 import lombok.AllArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.eclipse.paho.client.mqttv3.MqttException;
-import org.eclipse.paho.client.mqttv3.MqttSecurityException;
 
-import java.net.ConnectException;
 import java.util.List;
-import java.util.function.Consumer;
 
 @Log4j2
 public class Main {

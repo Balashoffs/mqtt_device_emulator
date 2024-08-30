@@ -1,6 +1,5 @@
 package com.balashoff.mqtt;
 
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.eclipse.paho.client.mqttv3.*;
@@ -9,8 +8,6 @@ import java.nio.charset.StandardCharsets;
 import java.util.UUID;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.function.Consumer;
-import java.util.function.Supplier;
-
 
 @Log4j2
 @RequiredArgsConstructor
@@ -54,7 +51,7 @@ public class MqttCustomClient {
 
     }
 
-    public boolean pushMessage(String topic, String message) {
+    public void pushMessage(String topic, String message) {
 
         try {
             MqttMessage mqttMessage = new MqttMessage(message.getBytes(StandardCharsets.UTF_8));
@@ -69,7 +66,7 @@ public class MqttCustomClient {
             isRunning.set(false);
         }
 
-        return isRunning.get();
+        isRunning.get();
 
     }
 
