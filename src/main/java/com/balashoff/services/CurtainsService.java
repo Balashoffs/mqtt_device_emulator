@@ -22,8 +22,8 @@ public class CurtainsService extends BaseService {
 
     protected final JsonAnalyzer<CurtainsSensor> jsonAnalyzer = new JsonAnalyzer<>();
 
-    public CurtainsService(MqttCustomClient customClient) {
-        super(customClient);
+    public CurtainsService() {
+        super();
     }
 
     private void up() {
@@ -72,36 +72,44 @@ public class CurtainsService extends BaseService {
     }
 
     public void poll() {
-        topics.forEach(topic ->{
-            customClient.subscribeTopic(topic, s -> {
-                log.info("Входящее сообщение: {}", s);
-                CurtainsSensor incoming = jsonAnalyzer.fromJsonC(s, CurtainsSensor.class);
-                int nextDirection = incoming.getDirection();
-                int currentDirection = status.get();
-                if (nextDirection == currentDirection ) {
-                    log.info("Пользователь пытается повторить действие: {}", directionAsString(nextDirection));
-                } else {
-                    if (currentPos.get() > 0 && currentPos.get() < qnt) {
-                        log.info("Остановка движении шторы");
-                        status.set(0);
-                        try {
-                            Thread.sleep(1000);
-                        } catch (InterruptedException e) {
-                            throw new RuntimeException(e);
+        if (customClient.isRunning.get()) {
+            topics.forEach(topic -> {
+                customClient.subscribeTopic(topic, s -> {
+                    log.info("Входящее сообщение: {}", s);
+                    CurtainsSensor incoming = jsonAnalyzer.fromJsonC(s, CurtainsSensor.class);
+                    int nextDirection = incoming.getDirection();
+                    int currentDirection = status.get();
+                    if (nextDirection == currentDirection) {
+                        log.info("Пользователь пытается повторить действие: {}", directionAsString(nextDirection));
+                    } else {
+                        if (currentPos.get() > 0 && currentPos.get() < qnt) {
+                            log.info("Остановка движении шторы");
+                            status.set(0);
+                            try {
+                                Thread.sleep(1000);
+                            } catch (InterruptedException e) {
+                                throw new RuntimeException(e);
+                            }
+                        }
+                        status.set(nextDirection);
+                        if (nextDirection == 1) {
+                        } else if (nextDirection == -1) {
+                        } else {
+                            log.warn("Странное поведение, обратить внимание");
                         }
                     }
-                    status.set(nextDirection);
-                    if (nextDirection == 1) {
-                    } else if (nextDirection == -1) {
-                    } else {
-                        log.warn("Странное поведение, обратить внимание");
-                    }
-                }
+                });
             });
-        } );
+        }
+
     }
 
-    String directionAsString(int dir){
+    @Override
+    public void stop() {
+        topics.forEach(customClient::unSubscribe);
+    }
+
+    String directionAsString(int dir) {
         return switch (dir) {
             case -1 -> "Опускание";
             case 1 -> "Поднятие";

@@ -21,7 +21,7 @@ public class ServiceFabric {
         devices.addAll(foundDevices);
     }
 
-    public List<BaseService> create(MqttCustomClient customClient, String mqttPath) {
+    public List<BaseService> create(String mqttPath) {
         final Map<String, BaseService> createdServices = new HashMap<>();
         devices.forEach(standDevice -> {
             String topic = String.format("%s/%s", mqttPath, standDevice.getTopic());
@@ -29,16 +29,16 @@ public class ServiceFabric {
 
             switch (type) {
                 case "light":
-                    createdServices.putIfAbsent(type, new LightService(customClient));
+                    createdServices.putIfAbsent(type, new LightService());
                     break;
                 case "curtains":
-                    createdServices.putIfAbsent(type, new CurtainsService(customClient));
+                    createdServices.putIfAbsent(type, new CurtainsService());
                     break;
                 case "climate":
-                    createdServices.putIfAbsent(type, new ClimateService(customClient));
+                    createdServices.putIfAbsent(type, new ClimateService());
                     break;
                 case "power":
-                    createdServices.putIfAbsent(type, new PowerService(customClient));
+                    createdServices.putIfAbsent(type, new PowerService());
                     break;
             }
             if (createdServices.containsKey(type)) {
